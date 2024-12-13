@@ -1,14 +1,12 @@
 import { Locator, Page } from "@playwright/test";
 
 export class SearchPage {
-    private page: Page;
+    public page: Page;
     private searchInput : Locator
-    private searchButton : Locator
     
     constructor(page: Page) {
         this.page = page;
         this.searchInput = this.page.getByLabel("Pesquisar",{exact: true})
-        this.searchButton = this.page.getByRole("button",{name: "Pesquisa Google"})
     }
 
     async goto(): Promise<void> {
