@@ -6,7 +6,8 @@ export class SearchPage {
     
     constructor(page: Page) {
         this.page = page;
-        this.searchInput = this.page.getByLabel("Pesquisar",{exact: true})
+        //getByLabel depends on location of the label, so preffered to use locator by page structure.
+        this.searchInput = this.page.locator("form textarea") 
     }
 
     async goto(): Promise<void> {
