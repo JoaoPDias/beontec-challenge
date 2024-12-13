@@ -20,13 +20,13 @@ This project contains automated tests for Google Search using Playwright. The te
    cd <repository-directory>
 2. Install the dependencies:
     ```sh
-        npm install
+    npm install
     ```
 
 ## Running Tests
 To run the tests, use the following command:
 ```sh
-    npx playwright test
+npx playwright test
 ```
 
 ## Configuration
